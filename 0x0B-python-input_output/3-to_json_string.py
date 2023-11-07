@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""An object represented by a JSON string"""
+"""JSON representation of an object (string)"""
+
 import json
 
 
-def from_json_string(my_str):
-    """An object represented by a JSON string"""
-    return json.loads(my_str)
+def to_json_string(my_obj):
+    """JSON representation of an object (string)"""
+    return json.dumps(my_obj)
